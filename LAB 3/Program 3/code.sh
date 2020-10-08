@@ -1,11 +1,21 @@
 # Write a Shell program to accept two parameters perform File Test and display their attributes with suitable message if not display a suitable  message to pass right number of arguments.
 
-if test $# -eq 0
-then 
-echo "Usage $0 pattern file"
-elif test $# -eq 2
-then 
-grep "$1" $2 ||echo "$1 not found in $2"
+if test $# -eq 2
+then
+	if [ -f $1 ] 
+	then
+		ls -l $1
+	else
+		echo "Filename $1 doesnt exist"
+	fi
+	
+	if [ -f $2 ]
+	then
+		ls -l $2
+	else
+		echo "Filename $2 doesnt exist"
+	fi
+	
 else
-echo "Error!! you have to upload both the arguments"
+	echo "TNumber of Parameter passed is less than 2"
 fi
