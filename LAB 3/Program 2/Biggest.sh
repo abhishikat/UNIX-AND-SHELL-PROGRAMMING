@@ -1,4 +1,4 @@
-#Write a shell program to find biggest of three Numbers using  read statement or positional parameter technique.
+#Write a shell program to find biggest of three Numbers using  read statement or positional parameter technique
 
 echo "Enter 3 numbers"
 read n1
