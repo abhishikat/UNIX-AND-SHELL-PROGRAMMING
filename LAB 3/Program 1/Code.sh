@@ -1,4 +1,4 @@
-#Write an Interactive Shell program to check whether a  number is zero,positive or Negative
+#Write an Interactive Shell program to check whether a  number is zero,positive or Negative.
 echo "Enter a Number"
 read num
 
