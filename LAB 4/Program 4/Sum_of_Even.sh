@@ -12,4 +12,4 @@ do
 	fi
 	num=`expr $num - 1`
 done
-echo "Sum of Even Number till N: $sum"S
+echo "Sum of Even Number till N: $sum"
